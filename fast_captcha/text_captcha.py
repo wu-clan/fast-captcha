@@ -7,6 +7,7 @@ import random
 def text_captcha(num: int = 4) -> str:
     """
     text captcha
+
     :param num: number of codes
     :return:
     """

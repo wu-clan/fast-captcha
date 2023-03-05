@@ -12,6 +12,7 @@ from fast_captcha import text_captcha
 def use_rgb() -> tuple:
     """
     random colors for captcha text and distractions
+
     :return:
     """
     return tuple((random.randint(0, 255) for _ in range(3)))
@@ -20,6 +21,7 @@ def use_rgb() -> tuple:
 def ttf() -> list:
     """
     get all *.ttf file
+
     :return:
     """
     fp = Path(__file__).parent.joinpath('fonts')
@@ -39,9 +41,10 @@ def img_captcha(
         draw_points=False,
         points_density=4,
         img_type='jpeg',
-        img_byte=True):
+        img_byte=True) -> tuple:
     """
     img captcha
+
     :param code_num: number of codes
     :param width: picture width, default 120
     :param height: picture height, default 40
