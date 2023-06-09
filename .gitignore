@@ -142,3 +142,6 @@ poetry.lock
 
 # Pycharm
 .idea/
+
+# ruff
+.ruff_cache/
