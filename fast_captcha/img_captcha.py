@@ -45,7 +45,7 @@ def img_captcha(
     points_density: int = 4,
     img_type: str = 'jpeg',
     img_byte: Literal['file', 'bytesio', 'base64'] = 'bytesio',
-) -> tuple[Image | BytesIO | bytes, str]:
+) -> tuple[Image.Image | BytesIO | bytes, str]:
     """
     img captcha
 
