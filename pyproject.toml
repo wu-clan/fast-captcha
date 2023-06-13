@@ -23,7 +23,6 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.7"
 Pillow = "^9.2.0"
-pytest = "^7.3.1"
 
 [tool.poetry.dev-dependencies]
 pytest = '^7.0.0'
