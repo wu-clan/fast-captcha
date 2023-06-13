@@ -5,14 +5,14 @@ from __future__ import annotations
 import random
 from io import BytesIO
 from pathlib import Path
-from typing import Tuple, Literal
+from typing import Literal
 
 from PIL import Image, ImageDraw, ImageFont
 
 from fast_captcha import text_captcha
 
 
-def use_rgb() -> Tuple[int, ...]:
+def use_rgb() -> tuple[int, ...]:
     """
     random colors for captcha text and distractions
 
@@ -44,7 +44,7 @@ def img_captcha(
     draw_points: bool = False,
     points_density: int = 4,
     img_type: str = 'jpeg',
-    img_byte: Literal['file', 'bytesio', 'base64'] = 'bytesio',
+    img_byte: str | Literal['file', 'bytesio', 'base64'] = 'bytesio',
 ) -> tuple[Image.Image | BytesIO | bytes, str]:
     """
     img captcha
