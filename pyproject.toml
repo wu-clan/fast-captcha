@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fast_captcha"
-version = "0.2.0"
+version = "0.2.1"
 description = "Fast to use captcha"
 authors = ["wu <jianhengwu0407@gmail.com>"]
 license = "MIT"
