@@ -1,12 +1,12 @@
-[tool.poetry]
+[project]
 name = "fast_captcha"
 version = "0.2.1"
 description = "Fast to use captcha"
-authors = ["wu <jianhengwu0407@gmail.com>"]
-license = "MIT"
+authors = [
+    { name = "Wu Clan", email = "jianhengwu0407@gmail.com" },
+]
+license = { text = "MIT" }
 readme = "README.md"
-homepage = "https://github.com/wu-clan/fast_captcha"
-repository = "https://github.com/wu-clan/fast_captcha"
 classifiers = [
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
@@ -19,13 +19,24 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+requires-python = ">=3.7,<4.0"
+dependencies = [
+    "Pillow<10.0.0,>=9.2.0",
+]
 
-[tool.poetry.dependencies]
-python = "^3.7"
-Pillow = "^9.2.0"
+[project.urls]
+homepage = "https://github.com/wu-clan/fast_captcha"
+repository = "https://github.com/wu-clan/fast_captcha"
 
-[tool.poetry.dev-dependencies]
-pytest = '^7.0.0'
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest<8.0.0,>=7.0.0",
+    "pre-commit>=2.21.0",
+]
+lint = [
+    "black>=23.3.0",
+    "ruff>=0.0.289",
+]
 
 [tool.ruff]
 line-length = 120
@@ -35,6 +46,12 @@ cache-dir = "./.ruff_cache"
 lines-between-types = 1
 order-by-type = true
 
+[tool.black]
+color = true
+line-length = 120
+target-version = ['py310']
+skip-string-normalization = true
+
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
