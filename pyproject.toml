@@ -12,7 +12,6 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
@@ -21,9 +20,9 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-requires-python = ">=3.7,<4.0"
+requires-python = ">=3.8,<4.0"
 dependencies = [
-    "Pillow>=10.0.1",
+    "Pillow>=10.0.0",
 ]
 
 [project.urls]
