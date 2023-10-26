@@ -1,0 +1,5 @@
+[pypi]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+
+[pypi.extra]
+url = "https://pypi.org/simple"
