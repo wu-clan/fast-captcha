@@ -2,15 +2,13 @@
 
 fast to use captcha
 
-# Install
+## Install
 
 ```shell
 pip install fast-captcha
 ```
 
-# Use
-
-## text
+## Text Captcha
 
 ```python
 from fast_captcha import text_captcha
@@ -18,7 +16,7 @@ from fast_captcha import text_captcha
 print(text_captcha())  # BnZU
 ```
 
-## img
+## Image Captcha
 
 ```python
 from fast_captcha import img_captcha
@@ -28,8 +26,6 @@ img, text = img_captcha()
 print(img)  # <_io.BytesIO object at 0x000002366AB93DB0>
 print(text)  # 2z22
 ```
-
-# Integration
 
 ## FastAPI
 
