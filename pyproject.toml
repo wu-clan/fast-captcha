@@ -40,12 +40,17 @@ lint = [
 ]
 
 [tool.ruff]
+extend-select = ["I"]
 line-length = 120
 cache-dir = "./.ruff_cache"
 
 [tool.ruff.isort]
 lines-between-types = 1
 order-by-type = true
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "single"
+multiline-quotes = "single"
 
 [tool.black]
 color = true

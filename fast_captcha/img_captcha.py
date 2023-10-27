@@ -3,9 +3,10 @@
 from __future__ import annotations
 
 import random
+
 from io import BytesIO
 from pathlib import Path
-from typing import Literal, Tuple, List
+from typing import List, Literal, Tuple
 
 from PIL import Image, ImageDraw, ImageFont
 

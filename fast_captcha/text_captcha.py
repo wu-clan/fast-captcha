@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import string
 import random
+import string
 
 
 def text_captcha(num: int = 4) -> str:
