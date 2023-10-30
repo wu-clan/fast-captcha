@@ -52,11 +52,6 @@ order-by-type = true
 [tool.ruff.format]
 quote-style = "single"
 
-[tool.black]
-color = true
-line-length = 120
-skip-string-normalization = true
-
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
