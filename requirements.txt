@@ -10,7 +10,7 @@ identify==2.5.24
 iniconfig==2.0.0
 nodeenv==1.8.0
 packaging==23.1
-Pillow==10.1.0
+Pillow==10.3.0
 platformdirs==3.10.0
 pluggy==1.2.0
 pre-commit==2.21.0
