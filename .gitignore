@@ -2,6 +2,7 @@
 .venv
 venv/
 .idea/
+.zed/
 .vscode/
 .ruff_cache/
 .pdm-build/

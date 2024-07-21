@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from fast_captcha import text_captcha
+from fast_captcha.text_captcha import text_captcha
 
 
 def test_text():
