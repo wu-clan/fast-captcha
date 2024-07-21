@@ -10,7 +10,7 @@ from typing import List, Literal, Tuple
 
 from PIL import Image, ImageDraw, ImageFont
 
-from fast_captcha import text_captcha
+from fast_captcha.text_captcha import text_captcha
 
 
 def use_rgb() -> Tuple[int, ...]:
