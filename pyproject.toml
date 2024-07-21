@@ -32,11 +32,14 @@ repository = "https://github.com/wu-clan/fast_captcha"
 [tool.pdm.dev-dependencies]
 test = [
     "pytest<8.0.0,>=7.0.0",
-    "pre-commit>=2.21.0",
 ]
 lint = [
-    "ruff>=0.1.3",
+    "pre-commit>=3.0.0",
+    "ruff>=0.5.0",
 ]
+
+[tool.pdm.scripts]
+lint = "pre-commit run --all-files"
 
 [tool.ruff]
 line-length = 120
