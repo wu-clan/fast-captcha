@@ -1,7 +1,9 @@
 [project]
 name = "fast_captcha"
-version = "0.3.0"
 description = "Fast to use captcha"
+dynamic = [
+    "version",
+]
 authors = [
     { name = "Wu Clan", email = "jianhengwu0407@gmail.com" },
 ]
@@ -28,6 +30,9 @@ dependencies = [
 [project.urls]
 homepage = "https://github.com/wu-clan/fast_captcha"
 repository = "https://github.com/wu-clan/fast_captcha"
+
+[tool.pdm]
+version = { source = "file", path = "fast_captcha/__init__.py" }
 
 [tool.pdm.dev-dependencies]
 test = [
